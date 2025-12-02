@@ -41,7 +41,7 @@ use of shared memory to avoid large N^2 read/writes.
 * This thread-per-row simplification makes the matrix multiplications very slow. This is probably why for longer 
 sequences and larger block sizes, this gets slower than the manual implementation.
 * Q,K,Vs are in float32, unlike the original implementation which uses float16.
-* The block size is [fixed](https://github.com/tspeterkim/flash-attention-minimal/blob/9b7ca8ef4e6afdbfeb149a9cd488c8dea9af9ad6/flash.cu#L85) at compile time to 32.
+* The block size is [fixed](https://github.com/komalacharyaa/flash-attention-mini/blob/master/flash.cu) at compile time to 32.
 
 ## Todos
 - [ ] Add backward pass
